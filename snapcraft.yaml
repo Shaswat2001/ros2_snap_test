@@ -12,14 +12,12 @@ grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
-  ros-test-snap:
+  octomap-rviz-plugins:
     # See 'snapcraft plugins'
     plugin: catkin
     source: https://github.com/Shaswat2001/ros2_snap_test.git
     source-branch: main
     catkin-packages: [octomap_rviz_plugins]
-    # catkin-packages:  # white list package to integrate
-    #   - snapped-ros1-pkg
     stage-packages:
       - ros-noetic-rosbash # necessary if we need rosrun
       - ros-noetic-roslaunch # necessary if we need roslaunch
