@@ -15,7 +15,9 @@ parts:
   ros-test-snap:
     # See 'snapcraft plugins'
     plugin: catkin
-    source: .
+    source: https://github.com/Shaswat2001/ros2_snap_test.git
+    source-branch: main
+    catkin-packages: [octomap_rviz_plugins]
     # catkin-packages:  # white list package to integrate
     #   - snapped-ros1-pkg
     stage-packages:
